@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Wallet Ads</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <h1 class="title">Crypto Wallet Ads</h1>
+      <button id="connectWalletButton">Connect Wallet</button>
+      <div id="ad-container" hidden>
+        <button class="close-btn" onclick="document.getElementById('ad-container').hidden = true">&times;</button>
+        <p id="ad-message">Discover rare NFTs on Marketplace Y!</p>
+        <button class="cta-btn" onclick="window.open('https://example.com', '_blank')">Learn More</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.getElementById("connectWalletButton").addEventListener("click", async () => {
+      const response = await fetch('/api/ads');
+      const data = await response.json();
+      document.getElementById("ad-message").textContent = data.ad.message;
+      document.getElementById("ad-container").hidden = false;
+    });
+  </script>
+</body>
+</html>

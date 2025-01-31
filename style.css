@@ -1,0 +1,31 @@
+:root {
+  --color-bg: #BDC9FF;
+  --color-text-main: #000000;
+  --color-text-header: #2800FF;
+  --color-primary: #AFECE0;
+  --wrapper-height: 87vh;
+  --font-family: 'HK Grotesk';
+}
+
+body {
+  font-family: HK Grotesk;
+  background-color: var(--color-bg);
+}
+
+.wrapper {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+#ad-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ffff00);
+  text-align: center;
+  font-weight: bold;
+}
