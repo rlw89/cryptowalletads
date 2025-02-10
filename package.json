@@ -1,0 +1,16 @@
+{
+  "name": "cryptowalletads",
+  "version": "1.0.0",
+  "description": "Crypto Wallet Ads - A project for serving ads related to cryptocurrency wallets.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "echo 'No build step required for this project'"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {},
+  "author": "Your Name",
+  "license": "MIT"
+}
